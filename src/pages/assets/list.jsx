@@ -105,7 +105,6 @@ const AssetList = () => {
   }, [filteredData, sortBy, sortOrder]);
   const handleSort = (field) => {
     if (sortBy === field) {
-      // Toggle asc/desc
       setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
     } else {
       setSortBy(field);
